@@ -149,9 +149,9 @@ jobs:
 
     - name: Upload Firmware To Release(发布固件)
       if: steps.compile.outputs.status == 'success' && env.FIRMWARE_RELEASE == 'true'
-      uses: ncipollo/release-action@main
+      uses: ncipollo/release-action@v1
       with:
-        name: ${{ env.DATE }} for ${{ env.FIRMWARE_TAG }}
+        name: R${{ env.DATE }} for ${{ env.FIRMWARE_TAG }}
         allowUpdates: true
         tag: ${{ env.FIRMWARE_TAG }}
         token: ${{ secrets.GITHUB_TOKEN }}
