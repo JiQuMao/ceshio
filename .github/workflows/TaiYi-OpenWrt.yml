@@ -6,8 +6,8 @@ on:
     - cron: 0 19 * * *
 
 env:
-  REPO_URL: https://github.com/LiBwrt/openwrt-6.x.git
-  REPO_BRANCH: main-nss
+  REPO_URL: https://github.com/JiQuMao/openwrt-ipq.git
+  REPO_BRANCH: 24.10-nss
   CONFIG_FILE: configs/TaiYi.config
   DIY_SCRIPT: scripts/script.sh
   CLASH_KERNEL: amd64
